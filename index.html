@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.0.7/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="hero bg-[#F9F6E2] px-0 lg:px-14 text-center items-center  w-full">
+            <div class="hero-content flex-col lg:flex-row-reverse justify-between">
+                <img src="/images/Summer 1.png" />
+                <div>
+                    <h6 class="text-black text-xl lg:text-2xl font-medium">---SALE FEVER---</h6>
+                    <h1 class="text-[#111] pt-11 pb-20 text-2xl  lg:text-4xl font-bold ">Purchase TK 200 or <br>above &
+                        get <span class="text-[#E527B2] text-2xl lg:text-4xl font-bold">20% off</span> </h1>
+                    <p class=" text-black text-base font-medium">Use Promo Code. <span
+                            class="text-white text-base font-semibold bg-[#E527B2] px-6 py-4 rounded-lg">SELL200</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="pt-28 px-32">
+            <div>
+                <h3 class="text-black   text-4xl font-semibold pb-3">Kitchenware</h3>
+                <div class="lg:flex  gap-6 cursor-pointer">
+                    <div id="product1" class="my-8 card w-96 bg-base-100 shadow-xl justify-center text-center items-center">
+
+                        <div class="bg-[#1111110d] px-5 pt-5 ">
+
+                            <img src="/images/prod1.png"  />
+
+                        </div>
+
+                        <div class="rating pt-5 pb-3">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title" id="product1Name">K. Accessories</h2>
+                            <p><span id="productPrice1">39.00</span> TK</p>
+
+                        </div>
+                    </div>
+                    <div id="product2" class="my-8 card w-96 bg-base-100 shadow-xl justify-center text-center items-center">
+
+                        <div class="bg-[#1111110d] px-5 pt-5 ">
+
+                            <img src="/images//prod2.png"  />
+
+                        </div>
+
+                        <div class="rating pt-5 pb-3">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                        </div>
+                        <div class="card-body">
+                            <h2 id="product2Name" class="card-title">K. Accessories</h2>
+                            <p><span id="productPrice2">25.00</span> TK</p>
+                        </div>
+                    </div>
+                    <div id="product3" class="my-8 card w-96 bg-base-100 shadow-xl justify-center text-center items-center">
+
+                        <div class="bg-[#1111110d] px-5 pt-5 ">
+
+                            <img src="/images/prod3.png"  />
+
+                        </div>
+
+                        <div class="rating pt-5 pb-3">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                        </div>
+                        <div class="card-body">
+                            <h2 id="product3Name" class="card-title">Home Cooker </h2>
+                            <p> <span id="productPrice3"> 49.00 </span>TK</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Have coupon?</h3>
+
+                        <div class="join pt-2 pb-4">
+                            <input id="coupon-Code" class="input input-bordered join-item" placeholder="Coupon Code" />
+                            <button disabled id="applyButton" class="btn join-item bg-[#E527B2] text-white " >Apply</button>
+                        </div>
+                        <ol id="cartItem" type="1">
+
+                        </ol>
+
+                        <hr>
+
+                        <h3>
+                            Total Price: <span id="totalPrice"> 0</span> TK
+                        </h3>
+                        <h3>
+                            Discount: <span id="discount">0 </span>TK
+                        </h3>
+                        <h3>
+                            Total : <span id="totalPriceAfterDiscount">0</span> TK
+                        </h3>
+                        <br>
+
+
+                        <!-- <button id="makePurchaseButton" class="bg-[#E527B2] text-white rounded-lg px-8 py-2"
+                            disabled>Make Purchase</button> -->
+
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button id="makePurchaseButton" class="btn bg-[#E527B2] text-white rounded-lg px-8 py-2"
+                            disabled onclick="my_modal_1.showModal()"> Make Purchase</button>
+                        <dialog id="my_modal_1" class="modal items-center justify-center text-center">
+                            <div class="modal-box items-center justify-center text-center">
+                                <img src="images/congo.png" alt="" >
+                                <br>
+                                <br>
+                                <br>
+                                
+                                <h3 class="font-bold text-lg">Congratulations!</h3>
+                                <p class="py-4">You have purchased the product</p>
+                                <div class="modal-action">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button id="home-button"  class="btn bg-[#E527B2] text-white rounded-lg px-8 py-2">Home</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="pt-14 pb-14 ">
+                <h3 class="text-black text-4xl font-semibold pb-3">Furniture</h3>
+                <div class="lg:flex gap-6">
+                    <div id="product4" class="card my-8 w-96 bg-base-100 shadow-xl justify-center text-center items-center">
+
+                        <div class="bg-[#1111110d] px-5 pt-5 ">
+
+                            <img src="/images/prod7.png"  />
+
+                        </div>
+
+                        <div class="rating pt-5 pb-3">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                        </div>
+                        <div class="card-body">
+                            <h2 id="product4Name" class="card-title">Single Relax Chair</h2>
+                            <p> <span id="productPrice4"> 185.00</span>TK</p>
+                        </div>
+                    </div>
+                    <div id="product5" class="my-8 card w-96 bg-base-100 shadow-xl justify-center text-center items-center">
+
+                        <div class="bg-[#1111110d] px-5 pt-5 ">
+
+                            <img src="/images/prod8.png"  />
+
+                        </div>
+
+                        <div class="rating pt-5 pb-3">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                        </div>
+                        <div class="card-body">
+                            <h2 id="product5Name" class="card-title">Children play</h2>
+                            <p><span id="productPrice5"> 299.00 </span>TK</p>
+                        </div>
+                    </div>
+                    <div id="product6" class="my-8 card w-96 bg-base-100 shadow-xl justify-center text-center items-center">
+
+                        <div class="bg-[#1111110d] px-5 pt-5 ">
+
+                            <img src="/images/prod9.png"  />
+
+                        </div>
+
+                        <div class="rating pt-5 pb-3">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                        </div>
+                        <div class="card-body">
+                            <h2 id="product6Name" class="card-title">Flexible Sofa </h2>
+                            <p><span id="productPrice6">339.00</span> TK</p>
+                        </div>
+                    </div>
+                    <div class="my-8 card w-96 bg-base-100 shadow-xl justify-center text-center items-center invisible">
+
+
+                        <div class="rating pt-5 pb-3 ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>
